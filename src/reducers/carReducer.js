@@ -1,6 +1,12 @@
-const initialState = {
+export const initialState = {
   additionalPrice: 0,
-
+  car: {
+    price: 26395,
+    name: '2019 Ford Mustang',
+    image:
+      'https://cdn.motor1.com/images/mgl/0AN2V/s1/2019-ford-mustang-bullitt.jpg',
+    features: []
+  },
   additionalFeatures: [
     { id: 1, name: 'V-6 engine', price: 1500 },
     { id: 2, name: 'Racing detail package', price: 1500 },
@@ -9,15 +15,26 @@ const initialState = {
   ]
 };
 
-const featureReducer = (state = initialState, action) => {
+export const featureReducer = (state = initialState, action) => {
   switch (action.type) {
-    case value:
-      break;
+    case 'ADD_FEATURE':
+      if (!state.car.features.includes(action.payload)) {
+        return {
+          //action.payload = { id: 1, name: 'V-6 engine', price: 1500 }
+          ...state,
+          additionalPrice: state.additionalPrice + action.payload.price,
+          car: {
+            ...state.car,
+            features: [...state.car.features, action.payload]
+          }
+        };
+      } else {
+        return state;
+      }
 
     default:
       return state;
   }
 };
 
-
-Lecture @ 1:11:15
+// Lecture @ 1:11:15

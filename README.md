@@ -49,6 +49,20 @@ This project was put together using create-react-app (CRA). You will not need to
 - Write out the steps you think you'll need to complete this project. It seems silly, but doing this with every project will help you grow into a better developer a lot faster.
 - Take note of the few comments throughout the app. They are there as little guides to nudge you in the right direction. You're welcome 😉
 
+---
+
+Planning Out State Management
+
+---
+
+1. After installing redux and react-redux, create a store(createStore) on the App.js page that takes a reducer and redux dev tools as aruguments (window.**REDUX_DEVTOOLS_EXTENSION** && window.**REDUX_DEVTOOLS_EXTENSION**())
+   2.Create a reducer function to be passed into the store
+   3.Wrap the <App> in a <Provider>
+   5.Decide which slices of state you want in the Redux store and which state you want to keep local to a component
+   4.Connect React components to the Redux store
+
+---
+
 **Step 2 - And... Action! 🎬**
 
 - Time to get your hands on your keyboard. Look at the first step you wrote down and start implementing!
