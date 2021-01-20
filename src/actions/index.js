@@ -4,3 +4,10 @@ export const addFeature = (feature) => {
     payload: feature
   };
 };
+
+export cosnt removeFeature = (feature) => {
+  return {
+    type: 'REMOVE_FEATURE',
+    payload: feature
+  }
+}
