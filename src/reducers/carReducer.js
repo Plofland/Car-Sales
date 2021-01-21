@@ -46,5 +46,3 @@ export const featureReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-// Lecture @ 1:11:15
