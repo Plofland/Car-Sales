@@ -31,17 +31,16 @@ In this project you will implement Redux to manage the state for this React appl
 
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal.
-- [ ] Download project dependencies by running `npm install`.
-- [ ] Add the dependencies you will need to implement Redux, using **npm**.
-- [ ] Start up the app using `npm start`.
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository in your terminal.
+- [x] Download project dependencies by running `npm install`.
+- [x] Add the dependencies you will need to implement Redux, using **npm**.
+- [x] Start up the app using `npm start`.
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
-### Task 2a:  _MVP Requirements:_
+### Task 2a: _MVP Requirements:_
 
 **Step 1 - Planning 📝**
 
@@ -49,6 +48,20 @@ This project was put together using create-react-app (CRA). You will not need to
 - Plan out your state management structure as mentioned above. The only requirment is that you _must_ use Redux
 - Write out the steps you think you'll need to complete this project. It seems silly, but doing this with every project will help you grow into a better developer a lot faster.
 - Take note of the few comments throughout the app. They are there as little guides to nudge you in the right direction. You're welcome 😉
+
+---
+
+Planning Out State Management
+
+---
+
+1. After installing redux and react-redux, create a store(createStore) on the App.js page that takes a reducer and redux dev tools as aruguments (window.**REDUX_DEVTOOLS_EXTENSION** && window.**REDUX_DEVTOOLS_EXTENSION**())
+   2.Create a reducer function to be passed into the store
+   3.Wrap the <App> in a <Provider>
+   5.Decide which slices of state you want in the Redux store and which state you want to keep local to a component
+   4.Connect React components to the Redux store
+
+---
 
 **Step 2 - And... Action! 🎬**
 
@@ -79,4 +92,5 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 - Implement an API from one of these sites [here](https://www.google.com/search?q=car+sales+api&rlz=1C5CHFA_enUS809US809&oq=car+sales+api&aqs=chrome..69i57j0l5.3580j0j1&sourceid=chrome&ie=UTF-8). I don't know if there are any good open APIs for this, so explore around. Check out what data these APIs return, and what you think would be fun to work with. The sky is the limit here!
 
 ## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
